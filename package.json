@@ -1,0 +1,24 @@
+{
+  "name": "ml-poc",
+  "version": "1.0.0",
+  "description": "POC for ML clustering algo in js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "mathjs": "^14.3.1",
+    "scikitjs": "^1.24.0",
+    "sklearn": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "prettier": "^3.5.3"
+  }
+}
