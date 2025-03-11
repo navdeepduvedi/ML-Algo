@@ -1,11 +1,12 @@
 import * as tf from "@tensorflow/tfjs";
 import * as math from "mathjs";
+import { inverseMatrix } from "../utils/helpers.js";
 
 // Function to compute Gaussian probability density function (PDF)
 function gaussianPDF(x, mean, covariance) {
   const d = mean.shape[0];
   const det = math.det(covariance);
-  const invCov = tf.linalg.inv(covariance);
+  const invCov = inverseMatrix(covariance);
 
   const factor = 1 / Math.sqrt((2 * Math.PI) ** d * det);
   const diff = tf.sub(x, mean);
